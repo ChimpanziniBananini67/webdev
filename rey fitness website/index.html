@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rye Fitness — More Than A Gym</title>
+<meta name="description" content="PULSE Fitness — premium 24/7 gym with Black Card and Classic memberships. Train. Transform. Thrive." />
+<link rel="stylesheet" href="css/styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="nav">
+  <a href="index.html" class="logo"><span class="logo-mark">R</span><span>Rye<small>Fitness</small></span></a>
+  <nav class="nav-links">
+    <a href="membership.html">Memberships</a>
+    <a href="getstarted.html">Get Started</a>
+    <a href="merchandise.html">Shop</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="login.html" class="btn btn-ghost">Log In</a>
+    <a href="login.html#register" class="btn btn-primary">Join Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">Train · Transform · Thrive</p>
+    <h1>More than <span class="accent">a gym.</span><br/>It's a <span class="outline">lifestyle.</span></h1>
+    <p class="lead">Join Rye Fitness and unlock 24/7 access, premium equipment, and a community that pushes you forward.</p>
+    <form class="hero-search" onsubmit="event.preventDefault(); alert('Searching gyms near: ' + this.q.value)">
+      <input name="q" placeholder="Search by city, address, or ZIP…" />
+      <button class="btn btn-primary">Find a Gym →</button>
+    </form>
+    <div class="hero-stats">
+      <div><strong>24/7</strong><span>Open Access</span></div>
+      <div><strong>15k+</strong><span>Members</span></div>
+      <div><strong>40+</strong><span>Trainers</span></div>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <p class="eyebrow">Memberships</p>
+    <h2>Pick the plan that <span class="accent">moves you.</span></h2>
+    <p class="muted">Both memberships unlock unlimited 24/7 access plus a full arsenal of cardio &amp; strength gear.</p>
+  </div>
+  <div class="plans">
+    <article class="plan plan-feature">
+      <span class="badge">Best value</span>
+      <h3>BLACK CARD</h3>
+      <p class="price">₱<strong>750</strong><span>/ month</span></p>
+      <ul>
+        <li>Unlimited 24/7 access</li>
+        <li>Bring a guest anytime</li>
+        <li>Premium digital workouts</li>
+        <li>1 free energy drink / day</li>
+        <li>50% off shop drinks</li>
+      </ul>
+      <div class="plan-actions">
+        <a href="membership.html#blackcard" class="btn btn-ghost">Learn More</a>
+        <a href="login.html#register" class="btn btn-primary">Join Now</a>
+      </div>
+    </article>
+    <article class="plan">
+      <h3>CLASSIC</h3>
+      <p class="price">₱<strong>500</strong><span>/ month</span></p>
+      <ul>
+        <li>Unlimited club access</li>
+        <li>All cardio &amp; strength gear</li>
+        <li>Free Wi-Fi</li>
+        <li>Locker room access</li>
+        <li>Member events</li>
+      </ul>
+      <div class="plan-actions">
+        <a href="membership.html#classic" class="btn btn-ghost">Learn More</a>
+        <a href="login.html#register" class="btn btn-primary">Join Now</a>
+      </div>
+    </article>
+  </div>
+  <div class="center"><a href="membership.html#compare" class="link-arrow">Compare memberships →</a></div>
+</section>
+
+<section class="section about">
+  <div class="about-text">
+    <p class="eyebrow">Our Story</p>
+    <h2>Built by a champion.<br/>Powered by <span class="accent">community.</span></h2>
+    <p>Rye Fitness was founded in 2021 by Rey Canlas, a former bodybuilding competitor on a mission to bring world-class training to Santa Catalina, Negros Occidental.</p>
+    <p>What started as a small local gym has grown into a welcoming space for everyone — beginners, athletes, and everyone in between.</p>
+    <a href="getstarted.html" class="btn btn-primary">Start Your Journey</a>
+  </div>
+  <div class="about-card">
+    <div class="quote">“Strength is built one rep, one day, one decision at a time.”</div>
+    <div class="founder">— Rey Canlas, Founder</div>
+  </div>
+</section>
+
+<section class="section cta">
+  <h2>Ready to feel the <span class="accent">PULSE?</span></h2>
+  <p class="muted">No commitments. Cancel anytime. Your first week is on us.</p>
+  <a href="login.html#register" class="btn btn-primary btn-lg">Claim Free Week →</a>
+</section>
+
+<footer class="footer">
+  <div>
+    <strong class="logo-mark small">P</strong>
+    <p>© 2026 Rye Fitness. Built for movement.</p>
+  </div>
+  <div class="footer-links">
+    <a href="membership.html">Memberships</a>
+    <a href="merchandise.html">Shop</a>
+    <a href="getstarted.html">Get Started</a>
+    <a href="login.html">Login</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

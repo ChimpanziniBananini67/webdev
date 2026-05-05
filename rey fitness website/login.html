@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Log In · Rye Fitness</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-form-wrapper">
+    <a href="index.html" class="logo" style="margin-bottom:30px"><span class="logo-mark">R</span><span>Rye<small>Fitness</small></span></a>
+    <div class="auth-tabs">
+      <button class="auth-tab" data-tab="login">Log In</button>
+      <button class="auth-tab" data-tab="register">Create Account</button>
+    </div>
+
+    <form class="auth-form" id="login-form">
+      <h1 class="auth-title">Welcome back.</h1>
+      <p class="auth-subtitle">Log in to your Rye Fitness account.</p>
+      <div id="login-message" class="auth-message"></div>
+      <div class="form-group">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" placeholder="Enter your username" required />
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="••••••••" required />
+        <a href="#" class="forgot-link" style="margin-top:6px">Forgot password?</a>
+      </div>
+      <p style="color:var(--muted);font-size:12px;margin-top:8px">Quick fill a test account:</p>
+      <div class="quick-login">
+        <button type="button" class="quick-btn" data-fill="admin">Admin</button>
+        <button type="button" class="quick-btn" data-fill="staff">Staff</button>
+        <button type="button" class="quick-btn" data-fill="user">User</button>
+        <button type="button" class="quick-btn" data-fill="default">Default</button>
+      </div>
+      <button type="submit" class="auth-submit-btn">Log In →</button>
+      <div class="auth-divider"><span>or</span></div>
+      <p class="auth-switch">Don't have an account? <a href="#" data-switch="register">Sign up here</a></p>
+    </form>
+
+    <form class="auth-form" id="register-form">
+      <h1 class="auth-title">Join Rye</h1>
+      <p class="auth-subtitle">Create your account and start your transformation.</p>
+      <div id="register-message" class="auth-message"></div>
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" id="reg-first" placeholder="John" required /></div>
+        <div class="form-group"><label>Last Name</label><input type="text" id="reg-last" placeholder="Doe" required /></div>
+      </div>
+      <div class="form-group"><label>Email</label><input type="email" id="reg-email" placeholder="john@example.com" required /></div>
+      <div class="form-group"><label>Phone</label><input type="tel" id="reg-phone" placeholder="(555) 123-4567" required /></div>
+      <div class="form-group"><label>Username</label><input type="text" id="reg-username" placeholder="Pick a username" required /></div>
+      <div class="form-group"><label>Password</label><input type="password" id="reg-password" placeholder="Create a strong password" required /></div>
+      <div class="form-group"><label>Confirm Password</label><input type="password" id="reg-confirm" placeholder="Re-enter password" required /></div>
+      <div class="form-options">
+        <label class="checkbox-label"><input type="checkbox" required /> I agree to the Terms of Service and Privacy Policy</label>
+      </div>
+      <button type="submit" class="auth-submit-btn">Create Account →</button>
+      <div class="auth-divider"><span>or</span></div>
+      <p class="auth-switch">Already have an account? <a href="#" data-switch="login">Log in here</a></p>
+    </form>
+  </div>
+  <div class="auth-image">
+    <div class="auth-image-overlay">
+      <p class="eyebrow">Begin Today</p>
+      <h2>Begin your transformation.</h2>
+      <p class="muted" style="color:#ddd">Join our community of fitness enthusiasts and reach your goals.</p>
+    </div>
+  </div>
+</div>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

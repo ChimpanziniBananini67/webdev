@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shop · Rye Fitness</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="nav">
+  <a href="index.html" class="logo"><span class="logo-mark">R</span><span>Rye<small>Fitness</small></span></a>
+  <nav class="nav-links">
+    <a href="membership.html">Memberships</a>
+    <a href="getstarted.html">Get Started</a>
+    <a href="merchandise.html">Shop</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="login.html" class="btn btn-ghost">Log In</a>
+    <a href="login.html#register" class="btn btn-primary">Join Now</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <p class="eyebrow">Shop</p>
+  <h1>Wear the <span class="accent">Rye</span></h1>
+  <p class="muted">Premium training gear, supplements, and apparel.</p>
+</section>
+
+<div class="products" id="products"></div>
+
+<footer class="footer">
+  <div><strong class="logo-mark small">P</strong><p>© 2026 Rye Fitness.</p></div>
+  <div class="footer-links">
+    <a href="membership.html">Memberships</a>
+    <a href="merchandise.html">Shop</a>
+    <a href="getstarted.html">Get Started</a>
+    <a href="login.html">Login</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+const products = [
+  {name:'PULSE Performance Tee', price:799, img:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80'},
+  {name:'Training Hoodie', price:1499, img:'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&q=80'},
+  {name:'Whey Protein 2kg', price:2499, img:'https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=500&q=80'},
+  {name:'Pre-Workout 300g', price:1299, img:'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80'},
+  {name:'Lifting Gloves', price:599, img:'https://images.unsplash.com/photo-1517438476312-10d79c077509?w=500&q=80'},
+  {name:'Resistance Bands Set', price:899, img:'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&q=80'},
+  {name:'Shaker Bottle', price:299, img:'https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?w=500&q=80'},
+  {name:'Gym Duffle Bag', price:1799, img:'https://images.unsplash.com/photo-1622445275576-721325763afe?w=500&q=80'}
+];
+const el = document.getElementById('products');
+el.innerHTML = products.map(p=>`
+  <div class="product">
+    <div class="product-img"><img src="${p.img}" alt="${p.name}"/></div>
+    <div class="product-body">
+      <h4>${p.name}</h4>
+      <div class="product-price">₱${p.price.toLocaleString()}</div>
+      <button onclick="alert('Added &quot;${p.name}&quot; to cart')">Add to Cart</button>
+    </div>
+  </div>
+`).join('');
+</script>
+</body>
+</html>

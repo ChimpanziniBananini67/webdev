@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dashboard · Rye Fitness</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="dash">
+  <aside class="dash-side">
+    <a href="index.html" class="logo"><span class="logo-mark">R</span><span>Rye<small>Fitness</small></span></a>
+    <nav id="dash-nav"></nav>
+    <div style="margin-top:auto;padding-top:30px">
+      <button class="btn btn-ghost" id="logout-btn" style="width:100%">Log Out</button>
+    </div>
+  </aside>
+  <main class="dash-main">
+    <div class="dash-head">
+      <div>
+        <h1 id="welcome">Welcome.</h1>
+        <span class="role-pill" id="role-pill">USER</span>
+      </div>
+    </div>
+    <div id="dash-content"></div>
+  </main>
+</div>
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
